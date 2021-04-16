@@ -1,0 +1,292 @@
+*{   /*this is css reset*/
+  margin: 0px;
+  padding: 0px;    
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+  
+} 
+#navbar::before{
+    content: "";
+    background: black;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+} 
+#logo{
+    margin: 0px 31px;
+}
+/*Logo*/
+#logo img{
+    height: 100px;
+    width: 110px;
+    z-index: 2;
+}
+/*navigation bar*/
+ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+#navbar ul li a{   /*here we are writing a so that whenever we take the mouse in the padding area of link then it occupies the hover properties that we will be giving*/
+    padding: 3px 15px;
+    display: block;
+    text-decoration: none;
+    color: green;
+    width: 80px;
+}    
+#navbar ul li a:hover{   
+    padding: 3px 15px;
+    display: block;
+    text-decoration: none;
+    color:  orangered;
+}    
+#navbar ul li{
+    list-style: none;
+}
+/*home section*/
+#home
+{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 0px 2px;
+  height: 285px;
+}
+
+#home::before
+{
+  content: "";
+  background: url('../img/bghome.jpg') no-repeat center center/cover;  /*../-for getting out of the css file */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.h-primary{
+    font-size: 2.8rem;  /*relative to html root*/
+    padding: 12px;
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+}
+.btn{
+    padding: 5px 14px;
+    margin: 5px 0px;
+    border: 2px solid black;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    background:  black;
+    color: white;
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.service-container{
+    margin: 100px 0px;
+    padding: 0px 0px;
+    position: relative;
+    top: 157px;
+}
+.h-services{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    margin:0px 20px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    
+}
+#services{
+    display:flex;
+}
+.box{
+    border: 2px solid yellowgreen;
+    background:cornsilk;
+    width: 33%;
+    padding: 20px;
+    margin:10px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 6px 4px grey;
+}
+
+.box img{
+    height: 170px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    z-index:-5;
+  
+}
+.heads{
+    font-size: 2rem;  /*relative to html root*/
+    padding: 12px;
+    color: black;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    margin-top: -215px;
+    opacity: 0.9;
+
+}
+.servm{
+    color: black;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    opacity: 0.9;
+}
+#box-1:hover{
+    border: 2px solid red;
+    
+}
+
+#box-2:hover{
+    border: 2px solid red;
+
+}
+#box-3:hover{
+    border: 2px solid red;
+
+}
+.clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-items img{
+       margin: 20px 20px;
+       padding: 20px 20px;
+}
+.clientsection::before{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width:100%;
+      z-index: -1;
+      opacity: 0.5;
+
+}
+#swiggy{
+    margin: 52px 38px;
+    cursor: pointer;
+}
+    
+#zomato{
+    margin: 13px 43px;
+    cursor: pointer;
+}
+#panda{
+    margin: 11px;
+    height: 102px;
+    width: 210px;
+    cursor: pointer;
+}
+#contact{
+    position: relative;
+    
+}
+#contact{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/bg2.jpg') no-repeat center center/cover;
+
+}
+footer{
+    background: black;
+    color: white;
+    margin: -14px 0px;
+    text-align: center;
+    padding: 0px 0px;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    margin: 10px 10px;
+}
+.contact-box::before{
+    content: "";
+    background: url('../img/contactus.jpg') no-repeat center center/cover;
+    position: absolute;
+      height: 100%;
+      width:100%;
+      z-index: -1;
+      opacity: 0.5;
+
+}
+.contact-box form{
+       width: 40%;
+}
+.contact-box input,
+.contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', cursive;
+}
+#dinein{
+    width: 109%;
+    height: 118%;
+    opacity: 0.3;
+    border-radius: 20px;
+    margin: -20px -19px;
+}
+#deliver{
+    width: 109%;
+    height: 118%;
+    opacity: 0.3;
+    border-radius: 20px;
+    margin: -20px -19px;
+}
+#takeaway{
+    width: 109%;
+    height: 118%;
+    opacity: 0.3;
+    border-radius: 20px;
+    margin: -20px -19px;
+}
+#Contact{
+    margin: 65px 10px;
+}
+.clientsection{
+    margin: 10px 10px;
+
+}
+.social{
+    margin: 10px 585px;
+    
+}
+#socialf{
+    height: 200%;
+
+   
+}
+
+
+    
